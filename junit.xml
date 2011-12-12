@@ -25,6 +25,7 @@
       <testcase classname='php-src.tests/basic/002.phpt' name='Simple POST Method test' time='0.0078'></testcase>
       <testcase classname='php-src.tests/basic/003.phpt' name='GET and POST Method combined' time='0.0076'></testcase>
     </testsuite>
+  </testsuite>
   <testsuite name="pecl-sqlite">
     <testsuite name="pecl-sqlite.tests/basic" tests="3" failures="0" errors="0" skip="0" time="0.549">
       <testcase classname='pecl-sqlite.tests/basic/001.phpt' name='Trivial &quot;Hello World&quot; test' time='0.0077'></testcase>
