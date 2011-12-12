@@ -7,7 +7,6 @@
       <testcase classname='php-src.tests/run-test/test003.phpt' name='EXPECTREGEX' time='0.0077'></testcase>
       <testcase classname='php-src.tests/run-test/test004.phpt' name='INI section allows &#039;=&#039;' time='0.0077'></testcase>
       <testcase classname='php-src.tests/run-test/test005.phpt' name='Error message handling (without ZendOptimizer)' time='0.0075'></testcase>
-      <testcase classname='php-src.tests/run-test/test005.phpt' name='Error message handling (without ZendOptimizer)' time='0.0075'></testcase>
       <testcase classname='php-src.tests/run-test/test006.phpt' name='Error messages are shown' time='0.0076'></testcase>
       <testcase classname='php-src.tests/run-test/test007.phpt' name='dirname test' time='0.0083'></testcase>
       <testcase classname='php-src.tests/run-test/test008.phpt' name='Error message handling (with ZendOptimizer)' time='0.0077'>
@@ -15,8 +14,7 @@
           Zend Optimizer is not loaded
         ]]></skipped>
       </testcase>
-      <testcase classname='php-src.tests/run-test/test008a.phpt' name='Error message handling (without ZendOptimizer)' time='0.0077'></testcase>
-      <testcase classname='php-src.tests/run-test/test008a.phpt' name='Error message handling (without ZendOptimizer)' time='0.0077'></testcase>
+      <testcase classname='php-src.tests/run-test/test008.phpt' name='Error message handling (without ZendOptimizer)' time='0.0077'></testcase>
       <testcase classname='php-src.tests/run-test/test009.phpt' name='print_r(Object)' time='0.0080'></testcase>
       <testcase classname='php-src.tests/run-test/test010.phpt' name='STDIN input' time='0.0081'></testcase>
     </testsuite>
