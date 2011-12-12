@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="testing-junit-format" default="build">
+
+ <target name="build">
+  <touch file="junit.xml"/>
+ </target>
+</project>

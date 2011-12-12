@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="php-src" tests="13" failures="0" errors="0" skip="1" time="96.9359">
+    <testsuite name="php-src.tests/run-test" tests="11" failures="0" errors="0" skip="1" time="0.086">
+      <testcase classname='php-src.tests/run-test/test001.phpt' name='EXPECT' time='0.0081'></testcase>
+      <testcase classname='php-src.tests/run-test/test002.phpt' name='EXPECTF' time='0.0076'></testcase>
+      <testcase classname='php-src.tests/run-test/test003.phpt' name='EXPECTREGEX' time='0.0077'></testcase>
+      <testcase classname='php-src.tests/run-test/test004.phpt' name='INI section allows &#039;=&#039;' time='0.0077'></testcase>
+      <testcase classname='php-src.tests/run-test/test005.phpt' name='Error message handling (without ZendOptimizer)' time='0.0075'></testcase>
+      <testcase classname='php-src.tests/run-test/test005.phpt' name='Error message handling (without ZendOptimizer)' time='0.0075'></testcase>
+      <testcase classname='php-src.tests/run-test/test006.phpt' name='Error messages are shown' time='0.0076'></testcase>
+      <testcase classname='php-src.tests/run-test/test007.phpt' name='dirname test' time='0.0083'></testcase>
+      <testcase classname='php-src.tests/run-test/test008.phpt' name='Error message handling (with ZendOptimizer)' time='0.0077'>
+        <skipped><![CDATA[
+          Zend Optimizer is not loaded
+        ]]></skipped>
+      </testcase>
+      <testcase classname='php-src.tests/run-test/test008a.phpt' name='Error message handling (without ZendOptimizer)' time='0.0077'></testcase>
+      <testcase classname='php-src.tests/run-test/test008a.phpt' name='Error message handling (without ZendOptimizer)' time='0.0077'></testcase>
+      <testcase classname='php-src.tests/run-test/test009.phpt' name='print_r(Object)' time='0.0080'></testcase>
+      <testcase classname='php-src.tests/run-test/test010.phpt' name='STDIN input' time='0.0081'></testcase>
+    </testsuite>
+    <testsuite name="php-src.tests/basic" tests="3" failures="0" errors="0" skip="0" time="0.549">
+      <testcase classname='php-src.tests/basic/001.phpt' name='Trivial &quot;Hello World&quot; test' time='0.0077'></testcase>
+      <testcase classname='php-src.tests/basic/002.phpt' name='Simple POST Method test' time='0.0078'></testcase>
+      <testcase classname='php-src.tests/basic/003.phpt' name='GET and POST Method combined' time='0.0076'></testcase>
+    </testsuite>
+  <testsuite name="pecl-sqlite">
+    <testsuite name="pecl-sqlite.tests/basic" tests="3" failures="0" errors="0" skip="0" time="0.549">
+      <testcase classname='pecl-sqlite.tests/basic/001.phpt' name='Trivial &quot;Hello World&quot; test' time='0.0077'></testcase>
+      <testcase classname='pecl-sqlite.tests/basic/002.phpt' name='Simple POST Method test' time='0.0078'></testcase>
+      <testcase classname='pecl-sqlite.tests/basic/003.phpt' name='GET and POST Method combined' time='0.0076'></testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>
