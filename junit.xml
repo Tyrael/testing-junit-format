@@ -1,35 +1,701 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="php-src" tests="13" failures="0" errors="0" skip="1" time="96.9359">
-    <testsuite name="php-src.tests" tests="10" failures="0" errors="0" skip="1" time="96.9359">
-      <testsuite name="php-src.tests.run-test" tests="10" failures="0" errors="0" skip="1" time="0.086">
-        <testcase classname='php-src.tests.run-test' name='test001 - EXPECT' time='0.0081'></testcase>
-        <testcase classname='php-src.tests.run-test' name='test002 - EXPECTF' time='0.0076'></testcase>
-        <testcase classname='php-src.tests.run-test' name='test003 - EXPECTREGEX' time='0.0077'></testcase>
-        <testcase classname='php-src.tests.run-test' name='test004 - INI section allows &#039;=&#039;' time='0.0077'></testcase>
-        <testcase classname='php-src.tests.run-test' name='test005 - Error message handling (without ZendOptimizer)' time='0.0075'></testcase>
-        <testcase classname='php-src.tests.run-test' name='test006 - Error messages are shown' time='0.0076'></testcase>
-        <testcase classname='php-src.tests.run-test' name='test007 - dirname test' time='0.0083'></testcase>
-        <testcase classname='php-src.tests.run-test' name='test008 - Error message handling (with ZendOptimizer)' time='0.0077'>
-          <skipped><![CDATA[
-            Zend Optimizer is not loaded
-          ]]></skipped>
-        </testcase>
-        <testcase classname='php-src.tests.run-test' name='test009 - print_r(Object)' time='0.0080'></testcase>
-        <testcase classname='php-src.tests.run-test' name='test010 - STDIN input' time='0.0081'></testcase>
-      </testsuite>
-    </testsuite>
-    <testsuite name="php-src.tests.basic" tests="3" failures="0" errors="0" skip="0" time="0.549">
-      <testcase classname='php-src.tests.basic' name='001 - Trivial &quot;Hello World&quot; test' time='0.0077'></testcase>
-      <testcase classname='php-src.tests.basic' name='002 - Simple POST Method test' time='0.0078'></testcase>
-      <testcase classname='php-src.tests.basic' name='003 - GET and POST Method combined' time='0.0076'></testcase>
-    </testsuite>
-  </testsuite>
-  <testsuite name="pecl-sqlite" tests="3" failures="0" errors="0" skip="0" time="0.4200">
-    <testsuite name="pecl-sqlite.tests.basic" tests="3" failures="0" errors="0" skip="0" time="0.549">
-      <testcase classname='pecl-sqlite.tests.basic' name='001 - Trivial &quot;Hello World&quot; test' time='0.0077'></testcase>
-      <testcase classname='pecl-sqlite.tests.basic' name='002 - Simple POST Method test' time='0.0078'></testcase>
-      <testcase classname='pecl-sqlite.tests.basic' name='003 - GET and POST Method combined' time='0.0076'></testcase>
-    </testsuite>
-  </testsuite>
+<testsuite name="php-src" tests="154" failures="0" errors="0" skip="74" time="1.9764">
+<testsuite name="php-src.ext.bz2.tests" tests="10" failures="0" errors="0" skip="0" time="0.1235">
+<testcase classname='php-src.ext.bz2.tests.001.phpt' name='bzopen() and invalid parameters' time='0.0118'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.001.phpt' name='bzopen() and invalid parameters' time='0.0118'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.002.phpt' name='bzopen() using fd opened in wrong mode' time='0.0098'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.002.phpt' name='bzopen() using fd opened in wrong mode' time='0.0098'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.003.phpt' name='bzread() tests' time='0.0124'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.003.phpt' name='bzread() tests' time='0.0124'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.004.phpt' name='bzread() tests with invalid files' time='0.0131'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.004.phpt' name='bzread() tests with invalid files' time='0.0131'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.005.phpt' name='bzcompress()/bzdecompress() tests' time='0.0134'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.005.phpt' name='bzcompress()/bzdecompress() tests' time='0.0134'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.bug51997.phpt' name='Bug #51997 (SEEK_CUR with 0 value, returns a warning)' time='0.0138'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.bug51997.phpt' name='Bug #51997 (SEEK_CUR with 0 value, returns a warning)' time='0.0138'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.bz2_filter_compress.phpt' name='bzip2.compress (with convert.base64-encode)' time='0.0149'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.bz2_filter_compress.phpt' name='bzip2.compress (with convert.base64-encode)' time='0.0149'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.bz2_filter_decompress.phpt' name='bzip2.decompress (with convert.base64-decode)' time='0.0129'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.bz2_filter_decompress.phpt' name='bzip2.decompress (with convert.base64-decode)' time='0.0129'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.with_files.phpt' name='BZ2 with files' time='0.0098'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.with_files.phpt' name='BZ2 with files' time='0.0098'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.with_strings.phpt' name='BZ2 with strings' time='0.0116'>
+</testcase>
+<testcase classname='php-src.ext.bz2.tests.with_strings.phpt' name='BZ2 with strings' time='0.0116'>
+</testcase>
+</testsuite>
+<testsuite name="php-src.ext.ctype.tests" tests="70" failures="0" errors="0" skip="0" time="0.9662">
+<testcase classname='php-src.ext.ctype.tests.001.phpt' name='ctype on integers' time='0.0104'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.001.phpt' name='ctype on integers' time='0.0104'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.002.phpt' name='ctype on strings' time='0.0126'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.002.phpt' name='ctype on strings' time='0.0126'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.bug25745.phpt' name='Bug #25745 (ctype functions fail with non-ascii characters)' time='0.0146'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.bug25745.phpt' name='Bug #25745 (ctype functions fail with non-ascii characters)' time='0.0146'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.bug34645.phpt' name='Bug #34645 (ctype corrupts memory when validating large numbers)' time='0.0140'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.bug34645.phpt' name='Bug #34645 (ctype corrupts memory when validating large numbers)' time='0.0140'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_basic.phpt' name='Test ctype_alnum() function : basic functionality' time='0.0093'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_basic.phpt' name='Test ctype_alnum() function : basic functionality' time='0.0093'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_error.phpt' name='Test ctype_alnum() function : error conditions - Incorrect number of args' time='0.0089'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_error.phpt' name='Test ctype_alnum() function : error conditions - Incorrect number of args' time='0.0089'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_variation1.phpt' name='Test ctype_alnum() function : usage variations - Different data types as $c arg' time='0.0159'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_variation1.phpt' name='Test ctype_alnum() function : usage variations - Different data types as $c arg' time='0.0159'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_variation2.phpt' name='Test ctype_alnum() function : usage variations - different integers' time='0.0152'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_variation2.phpt' name='Test ctype_alnum() function : usage variations - different integers' time='0.0152'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_variation3.phpt' name='Test ctype_alnum() function : usage variations - different string values' time='0.0170'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_variation3.phpt' name='Test ctype_alnum() function : usage variations - different string values' time='0.0170'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_variation4.phpt' name='Test ctype_alnum() function : usage variations  - octal and hexadecimal values' time='0.0152'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alnum_variation4.phpt' name='Test ctype_alnum() function : usage variations  - octal and hexadecimal values' time='0.0152'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_basic.phpt' name='Test ctype_alpha() function : basic functionality' time='0.0141'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_basic.phpt' name='Test ctype_alpha() function : basic functionality' time='0.0141'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_error.phpt' name='Test ctype_alpha() function : error conditions - Incorrect number of arguments' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_error.phpt' name='Test ctype_alpha() function : error conditions - Incorrect number of arguments' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_variation1.phpt' name='Test ctype_alpha() function : usage variations - different data types as $c arg' time='0.0112'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_variation1.phpt' name='Test ctype_alpha() function : usage variations - different data types as $c arg' time='0.0112'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_variation2.phpt' name='Test ctype_alpha() function : usage variations - different integers' time='0.0098'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_variation2.phpt' name='Test ctype_alpha() function : usage variations - different integers' time='0.0098'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_variation3.phpt' name='Test ctype_alpha() function : usage variations - different strings' time='0.0141'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_variation3.phpt' name='Test ctype_alpha() function : usage variations - different strings' time='0.0141'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_variation4.phpt' name='Test ctype_alpha() function : usage variations - Octal and hexadecimal values' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_alpha_variation4.phpt' name='Test ctype_alpha() function : usage variations - Octal and hexadecimal values' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_basic.phpt' name='Test ctype_cntrl() function : basic functionality' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_basic.phpt' name='Test ctype_cntrl() function : basic functionality' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_error.phpt' name='Test ctype_cntrl() function : error conditions - Incorrect number of args' time='0.0088'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_error.phpt' name='Test ctype_cntrl() function : error conditions - Incorrect number of args' time='0.0088'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_variation1.phpt' name='Test ctype_cntrl() function : usage variations - Different data types as $c arg' time='0.0125'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_variation1.phpt' name='Test ctype_cntrl() function : usage variations - Different data types as $c arg' time='0.0125'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_variation2.phpt' name='Test ctype_cntrl() function : usage variations - different integers' time='0.0151'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_variation2.phpt' name='Test ctype_cntrl() function : usage variations - different integers' time='0.0151'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_variation3.phpt' name='Test ctype_cntrl() function : usage variations - Different strings' time='0.0147'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_variation3.phpt' name='Test ctype_cntrl() function : usage variations - Different strings' time='0.0147'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_variation4.phpt' name='Test ctype_cntrl() function : usage variations - Octal and hexadecimal values' time='0.0150'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_cntrl_variation4.phpt' name='Test ctype_cntrl() function : usage variations - Octal and hexadecimal values' time='0.0150'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_basic.phpt' name='Test ctype_digit() function : basic functionality' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_basic.phpt' name='Test ctype_digit() function : basic functionality' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_error.phpt' name='Test ctype_digit() function : error conditions - incorrect number of arguments' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_error.phpt' name='Test ctype_digit() function : error conditions - incorrect number of arguments' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_variation1.phpt' name='Test ctype_digit() function : usage variations - different data types as $c arg' time='0.0151'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_variation1.phpt' name='Test ctype_digit() function : usage variations - different data types as $c arg' time='0.0151'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_variation2.phpt' name='Test ctype_digit() function : usage variations - different integers' time='0.0076'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_variation2.phpt' name='Test ctype_digit() function : usage variations - different integers' time='0.0076'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_variation3.phpt' name='Test ctype_digit() function : usage variations - different strings' time='0.0155'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_variation3.phpt' name='Test ctype_digit() function : usage variations - different strings' time='0.0155'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_variation4.phpt' name='Test ctype_digit() function : usage variations - octal and hexadecimal values' time='0.0128'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_digit_variation4.phpt' name='Test ctype_digit() function : usage variations - octal and hexadecimal values' time='0.0128'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_basic.phpt' name='Test ctype_graph() function : basic functionality' time='0.0151'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_basic.phpt' name='Test ctype_graph() function : basic functionality' time='0.0151'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_error.phpt' name='Test ctype_graph() function : error conditions - incorrect number of arguments' time='0.0132'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_error.phpt' name='Test ctype_graph() function : error conditions - incorrect number of arguments' time='0.0132'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_variation1.phpt' name='Test ctype_graph() function : usage variations - different data types as $c arg' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_variation1.phpt' name='Test ctype_graph() function : usage variations - different data types as $c arg' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_variation2.phpt' name='Test ctype_graph() function : usage variations - different integers' time='0.0118'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_variation2.phpt' name='Test ctype_graph() function : usage variations - different integers' time='0.0118'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_variation3.phpt' name='Test ctype_graph() function : usage variations - different strings' time='0.0120'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_variation3.phpt' name='Test ctype_graph() function : usage variations - different strings' time='0.0120'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_variation4.phpt' name='Test ctype_graph() function : usage variations - octal and hexadecimal values' time='0.0162'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_graph_variation4.phpt' name='Test ctype_graph() function : usage variations - octal and hexadecimal values' time='0.0162'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_basic.phpt' name='Test ctype_lower() function : basic functionality' time='0.0141'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_basic.phpt' name='Test ctype_lower() function : basic functionality' time='0.0141'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_error.phpt' name='Test ctype_lower() function : error conditions - incorrect number of args' time='0.0162'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_error.phpt' name='Test ctype_lower() function : error conditions - incorrect number of args' time='0.0162'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_variation1.phpt' name='Test ctype_lower() function : usage variations - different data types as $c arg' time='0.0138'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_variation1.phpt' name='Test ctype_lower() function : usage variations - different data types as $c arg' time='0.0138'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_variation2.phpt' name='Test ctype_lower() function : usage variations - different integers' time='0.0137'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_variation2.phpt' name='Test ctype_lower() function : usage variations - different integers' time='0.0137'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_variation3.phpt' name='Test ctype_lower() function : usage variations - different strings' time='0.0143'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_variation3.phpt' name='Test ctype_lower() function : usage variations - different strings' time='0.0143'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_variation4.phpt' name='Test ctype_lower() function : usage variations - octal and hexadecimal values' time='0.0097'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_lower_variation4.phpt' name='Test ctype_lower() function : usage variations - octal and hexadecimal values' time='0.0097'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_basic.phpt' name='Test ctype_print() function : basic functionality' time='0.0177'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_basic.phpt' name='Test ctype_print() function : basic functionality' time='0.0177'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_error.phpt' name='Test ctype_print() function : error conditions - incorrect number of args' time='0.0142'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_error.phpt' name='Test ctype_print() function : error conditions - incorrect number of args' time='0.0142'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_variation1.phpt' name='Test ctype_print() function : usage variations - different data types as $c arg' time='0.0138'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_variation1.phpt' name='Test ctype_print() function : usage variations - different data types as $c arg' time='0.0138'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_variation2.phpt' name='Test ctype_print() function : usage variations - different integers' time='0.0134'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_variation2.phpt' name='Test ctype_print() function : usage variations - different integers' time='0.0134'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_variation3.phpt' name='Test ctype_print() function : usage variations - different strings' time='0.0124'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_variation3.phpt' name='Test ctype_print() function : usage variations - different strings' time='0.0124'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_variation4.phpt' name='Test ctype_print() function : usage variations - octal and hexadecimal values' time='0.0136'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_print_variation4.phpt' name='Test ctype_print() function : usage variations - octal and hexadecimal values' time='0.0136'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_basic.phpt' name='Test ctype_punct() function : basic functionality' time='0.0089'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_basic.phpt' name='Test ctype_punct() function : basic functionality' time='0.0089'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_error.phpt' name='Test ctype_punct() function : error conditions - incorrect number of args' time='0.0134'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_error.phpt' name='Test ctype_punct() function : error conditions - incorrect number of args' time='0.0134'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_variation1.phpt' name='Test ctype_punct() function : usage variations - different data types as $c argument' time='0.0159'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_variation1.phpt' name='Test ctype_punct() function : usage variations - different data types as $c argument' time='0.0159'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_variation2.phpt' name='Test ctype_punct() function : usage variations - different integers' time='0.0152'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_variation2.phpt' name='Test ctype_punct() function : usage variations - different integers' time='0.0152'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_variation3.phpt' name='Test ctype_punct() function : usage variations - different punctuation' time='0.0138'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_variation3.phpt' name='Test ctype_punct() function : usage variations - different punctuation' time='0.0138'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_variation4.phpt' name='Test ctype_punct() function : usage variations - Octal and Hexadecimal values' time='0.0142'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_punct_variation4.phpt' name='Test ctype_punct() function : usage variations - Octal and Hexadecimal values' time='0.0142'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_basic.phpt' name='Test ctype_space() function : basic functionality' time='0.0166'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_basic.phpt' name='Test ctype_space() function : basic functionality' time='0.0166'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_error.phpt' name='Test ctype_space() function : error conditions - Incorrect number of args' time='0.0134'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_error.phpt' name='Test ctype_space() function : error conditions - Incorrect number of args' time='0.0134'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_variation1.phpt' name='Test ctype_space() function : usage variations - different data types as $c argument' time='0.0137'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_variation1.phpt' name='Test ctype_space() function : usage variations - different data types as $c argument' time='0.0137'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_variation2.phpt' name='Test ctype_space() function : usage variations - different integers' time='0.0141'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_variation2.phpt' name='Test ctype_space() function : usage variations - different integers' time='0.0141'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_variation3.phpt' name='Test ctype_space() function : usage variations - different strings' time='0.0155'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_variation3.phpt' name='Test ctype_space() function : usage variations - different strings' time='0.0155'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_variation4.phpt' name='Test ctype_space() function : usage variations - octal and hexadecimal values' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_space_variation4.phpt' name='Test ctype_space() function : usage variations - octal and hexadecimal values' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_basic.phpt' name='Test ctype_upper() function : basic functionality' time='0.0159'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_basic.phpt' name='Test ctype_upper() function : basic functionality' time='0.0159'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_error.phpt' name='Test ctype_upper() function : error conditions - incorrect number of args' time='0.0136'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_error.phpt' name='Test ctype_upper() function : error conditions - incorrect number of args' time='0.0136'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_variation1.phpt' name='Test ctype_upper() function : usage variations - different data types' time='0.0122'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_variation1.phpt' name='Test ctype_upper() function : usage variations - different data types' time='0.0122'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_variation2.phpt' name='Test ctype_upper() function : usage variations - different integers' time='0.0155'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_variation2.phpt' name='Test ctype_upper() function : usage variations - different integers' time='0.0155'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_variation3.phpt' name='Test ctype_upper() function : usage variations - different strings' time='0.0144'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_variation3.phpt' name='Test ctype_upper() function : usage variations - different strings' time='0.0144'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_variation4.phpt' name='Test ctype_upper() function : usage variations - octal and hexadecimal values' time='0.0130'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_upper_variation4.phpt' name='Test ctype_upper() function : usage variations - octal and hexadecimal values' time='0.0130'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_basic.phpt' name='Test ctype_xdigit() function : basic functionality' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_basic.phpt' name='Test ctype_xdigit() function : basic functionality' time='0.0139'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_error.phpt' name='Test ctype_xdigit() function : error conditions - Incorrect number of args' time='0.0140'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_error.phpt' name='Test ctype_xdigit() function : error conditions - Incorrect number of args' time='0.0140'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_variation1.phpt' name='Test ctype_xdigit() function : usage variations - different data typse as $c arg' time='0.0185'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_variation1.phpt' name='Test ctype_xdigit() function : usage variations - different data typse as $c arg' time='0.0185'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_variation2.phpt' name='Test ctype_xdigit() function : usage variations - different integers' time='0.0130'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_variation2.phpt' name='Test ctype_xdigit() function : usage variations - different integers' time='0.0130'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_variation3.phpt' name='Test ctype_xdigit() function : usage variations - Different strings' time='0.0150'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_variation3.phpt' name='Test ctype_xdigit() function : usage variations - Different strings' time='0.0150'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_variation4.phpt' name='Test ctype_xdigit() function : usage variations - heaxadecimal and octal values' time='0.0206'>
+</testcase>
+<testcase classname='php-src.ext.ctype.tests.ctype_xdigit_variation4.phpt' name='Test ctype_xdigit() function : usage variations - heaxadecimal and octal values' time='0.0206'>
+</testcase>
+</testsuite>
+<testsuite name="php-src.ext.curl.tests" tests="74" failures="0" errors="0" skip="74" time="0.8867">
+<testcase classname='php-src.ext.curl.tests.bug27023.phpt' name='Bug #27023 (CURLOPT_POSTFIELDS does not parse content types for files)' time='0.0136'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug45161.phpt' name='Bug #45161 (Reusing a curl handle leaks memory)' time='0.0136'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug46711.phpt' name='Bug #46711 (lost memory when foreach is used for values passed to curl_setopt())' time='0.0157'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug46739.phpt' name='Bug #46739 (array returned by curl_getinfo should contain content_type key)' time='0.0137'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug48203.phpt' name='Bug #48203 (Crash when CURLOPT_STDERR is set to regular file)' time='0.0141'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug48203_multi.phpt' name='Variation of bug #48203 with curl_multi_exec (Crash when file pointers passed to curl are closed before calling curl_multi_exec)' time='0.0143'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug48207.phpt' name='Test curl_setopt() CURLOPT_FILE readonly file handle' time='0.0114'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug48514.phpt' name='Bug #48514 (cURL extension uses same resource name for simple and multi APIs)' time='0.0113'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug52202.phpt' name='Bug #52202 (CURLOPT_PRIVATE gets clobbered)' time='0.0116'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug52827.phpt' name='Bug #52827 (curl_setopt with CURLOPT_STDERR erroneously increments the resource refcount)' time='0.0129'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug54798.phpt' name='Bug #54798 (Segfault when CURLOPT_STDERR file pointer is closed before calling curl_exec)' time='0.0094'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug54995.phpt' name='Bug #54995 (Missing CURLINFO_RESPONSE_CODE support)' time='0.0093'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.bug55767.phpt' name='Test curl_opt() function with POST params from array with a numeric key' time='0.0148'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_CURLOPT_READDATA.phpt' name='Test CURLOPT_READDATA without a callback function' time='0.0154'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_001.phpt' name='Test curl_exec() function with basic functionality' time='0.0086'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_002.phpt' name='Test curl_opt() function with CURLOPT_RETURNTRANSFER parameter set to 1' time='0.0128'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_003.phpt' name='Test curl_opt() function with POST parameters' time='0.0140'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_004.phpt' name='Test curl_opt() function with setting referer' time='0.0141'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_005.phpt' name='Test curl_opt() function with user agent' time='0.0139'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_006.phpt' name='Test curl_opt() function with CURLOPT_WRITEFUNCTION parameter set to a closure' time='0.0145'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_007.phpt' name='Test curl_error() &amp; curl_errno() function without url' time='0.0096'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_008.phpt' name='Test curl_error() &amp; curl_errno() function with problematic host' time='0.0117'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_009.phpt' name='Test curl_error() &amp; curl_errno() function with problematic protocol' time='0.0090'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_010.phpt' name='Test curl_error() &amp; curl_errno() function with problematic proxy' time='0.0158'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_011.phpt' name='Test curl_opt() function with COOKIE' time='0.0138'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_012.phpt' name='Test curl_opt() function with CURLOPT_HTTP_VERSION/CURL_HTTP_VERSION_1_0' time='0.0108'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_013.phpt' name='Test curl_opt() function with CURLOPT_HTTP_VERSION/CURL_HTTP_VERSION_1_1' time='0.0091'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_014.phpt' name='Test curl_init() function with basic functionality' time='0.0092'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_015.phpt' name='Test curl_init() function with $url parameter defined' time='0.0097'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_016.phpt' name='Test curl_getinfo() function with basic functionality' time='0.0112'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_017.phpt' name='Test curl_multi_exec() function with basic functionality' time='0.0145'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_018.phpt' name='Test curl_setopt() with curl_multi function with basic functionality' time='0.0140'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_019.phpt' name='Test curl_getinfo() function with CURLINFO_EFFECTIVE_URL parameter' time='0.0133'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_020.phpt' name='Test curl_getinfo() function with CURLINFO_HTTP_CODE parameter' time='0.0138'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_021.phpt' name='Test curl_getinfo() function with CURLINFO_CONTENT_TYPE parameter' time='0.0127'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_basic_022.phpt' name='Test curl_getinfo() function with CURLINFO_COOKIELIST parameter' time='0.0146'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_close_basic.phpt' name='curl_close' time='0.0107'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_copy_handle_basic.phpt' name='Test curl_copy_handle() function with basic functionality' time='0.0134'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_copy_handle_basic_001.phpt' name='Test curl_copy_handle() with simple get' time='0.0150'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_copy_handle_basic_002.phpt' name='Test curl_copy_handle() with simple POST' time='0.0098'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_copy_handle_basic_004.phpt' name='Test curl_copy_handle() after exec()' time='0.0098'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_copy_handle_basic_005.phpt' name='Test curl_copy_handle() after exec() with POST' time='0.0108'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_copy_handle_basic_006.phpt' name='Test curl_copy_handle() with User Agent' time='0.0113'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_copy_handle_basic_007.phpt' name='Test curl_copy_handle() with simple POST' time='0.0102'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_copy_handle_basic_008.phpt' name='Test curl_copy_handle() with CURLOPT_PROGRESSFUNCTION' time='0.0086'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_copy_handle_variation1.phpt' name='Test curl_copy_handle() change options in one handle' time='0.0096'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_copy_handle_variation2.phpt' name='Test curl_copy_handle() add options to the handles' time='0.0087'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_error_basic.phpt' name='curl_error() function - basic test for curl_error using a fake url' time='0.0081'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_escape.phpt' name='Test curl_escape and curl_unescape() functions' time='0.0103'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_file_deleted_before_curl_close.phpt' name='Memory corruption error if fp of just created file is closed before curl_close.' time='0.0092'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_ftp_pasv.phpt' name='Test curl_exec() function with basic functionality' time='0.0089'>
+<skipped><![CDATA[
+curl extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_multi_close_basic.phpt' name='curl_multi_close' time='0.0150'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_multi_getcontent_basic3.phpt' name='Curl_multi_getcontent() basic test with different sources (local file/http)' time='0.0164'>
+<skipped><![CDATA[
+need ext/curlskip PHP_CURL_HTTP_REMOTE_SERVER env variable is not defined
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_multi_getcontent_error1.phpt' name='Curl_multi_getcontent() error test' time='0.0130'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_multi_getcontent_error2.phpt' name='Curl_multi_getcontent() error test' time='0.0128'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_multi_getcontent_error3.phpt' name='Curl_multi_getcontent() error test' time='0.0126'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_multi_getcontent_error4.phpt' name='Curl_multi_getcontent() error test  with undefined handle' time='0.0082'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_multi_init_basic.phpt' name='Test curl_multi_init()' time='0.0093'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_multi_select_basic1.phpt' name='Test curl_multi_select()' time='0.0153'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_reset.phpt' name='Test curl_reset' time='0.0146'>
+<skipped><![CDATA[
+skip curl_reset doesn't exists (require libcurl >= 7.12.1)
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_setopt_CURLOPT_FOLLOWLOCATION_open_basedir.phpt' name='CURLOPT_FOLLOWLOCATION case check open_basedir' time='0.0143'>
+<skipped><![CDATA[
+cURL not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_setopt_CURLOPT_READFUNCTION.phpt' name='cURL option CURLOPT_READFUNCTION' time='0.0137'>
+<skipped><![CDATA[
+cURL extension not loaded
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_setopt_array_basic.phpt' name='curl_setopt_array() function - tests setting multiple cURL options with curl_setopt_array()' time='0.0157'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_setopt_basic002.phpt' name='curl_setopt basic tests with CURLOPT_STDERR.' time='0.0148'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_setopt_basic003.phpt' name='curl_setopt() call with CURLOPT_HTTPHEADER' time='0.0084'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_setopt_basic004.phpt' name='curl_setopt() call with CURLOPT_RETURNTRANSFER' time='0.0094'>
+<skipped><![CDATA[
+need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_setopt_error.phpt' name='curl_setopt() basic parameter test' time='0.0103'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_version_error.phpt' name='Test curl_version() function : error conditions' time='0.0090'>
+<skipped><![CDATA[
+- curl extension not available in this build
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_version_variation1.phpt' name='Test curl_version() function : usage variations - test values for $ascii argument' time='0.0092'>
+<skipped><![CDATA[
+- curl extension not available in this buildskip need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_write_callback.phpt' name='Test curl option CURLOPT_WRITEFUNCTION' time='0.0102'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_write_file.phpt' name='Test curl option CURLOPT_FILE' time='0.0098'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_write_return.phpt' name='Test curl option CURLOPT_RETURNTRANSFER' time='0.0137'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_write_stdout.phpt' name='Test curl option CURLOPT_FILE with STDOUT handle' time='0.0143'>
+<skipped><![CDATA[
+
+]]></skipped>
+</testcase>
+<testcase classname='php-src.ext.curl.tests.curl_writeheader_callback.phpt' name='Test curl option CURLOPT_HEADERFUNCTION' time='0.0105'>
+<skipped><![CDATA[
+- curl extension not available in this buildskip need PHP_CURL_HTTP_REMOTE_SERVER environment variable
+]]></skipped>
+</testcase>
+</testsuite>
+</testsuite>
 </testsuites>
